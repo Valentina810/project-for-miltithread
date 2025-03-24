@@ -6,7 +6,6 @@ import model.user.UpdatedUser;
 import model.user.User;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.parallel.Execution;
 
 import static io.restassured.RestAssured.given;
 import static org.apache.http.HttpStatus.SC_CREATED;
@@ -15,9 +14,7 @@ import static org.apache.http.HttpStatus.SC_OK;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
 
-@Execution(value = CONCURRENT)
 public class SingleUserTests extends TestBase {
 
     @Test

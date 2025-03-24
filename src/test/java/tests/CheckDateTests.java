@@ -3,14 +3,11 @@ package tests;
 import io.qameta.allure.AllureId;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.parallel.Execution;
 
 import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
 
-@Execution(value = CONCURRENT)
 public class CheckDateTests {
 
     @Test
